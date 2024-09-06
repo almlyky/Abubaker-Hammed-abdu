@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+
+    {% for x in data  %}
+    <h1>the product {{x.pr_name}}</h1>
+    {% endfor %}
+    <a href="/about">about</a>
+</body>
+
+</html>
